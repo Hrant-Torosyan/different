@@ -1,0 +1,35 @@
+@import "@styles/variables.scss";
+
+.button {
+	max-width: 100%;
+	padding: 1rem 2rem;
+	border-radius: 0.8rem;
+	box-shadow: $boxShadow;
+	transition: 0.5s;
+	font-size: 1.6rem;
+	&:hover {
+		box-shadow: none;
+	}
+
+	&.default {
+		border: 1px solid $darkBlue;
+		&:hover {
+			background: $darkBlue;
+			color: white;
+		}
+	}
+	&.del {
+		border: 1px solid $red;
+		&:hover {
+			background: $red;
+			color: white;
+		}
+	}
+
+	&.DIS {
+		box-shadow: none;
+		background: $gray;
+		border-color: $darkGray;
+		pointer-events: none;
+	}
+}

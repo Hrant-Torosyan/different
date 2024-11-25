@@ -1,0 +1,40 @@
+@import "@styles/variables.scss";
+.weatherDays {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	.weatherDaysItem {
+		padding: 1.5rem;
+		border-radius: 1.2rem;
+		box-shadow: $boxShadow;
+		cursor: pointer;
+		transition: 0.5s;
+		p {
+			font-size: 1.6rem;
+		}
+		.weatherDaysItemImg {
+			display: flex;
+			align-items: center;
+			h2 {
+				font-weight: 600;
+				font-size: 2rem;
+			}
+			img {
+				width: 5rem;
+				height: auto;
+			}
+		}
+		&:hover {
+			background: $lightBlue;
+			color: white;
+		}
+	}
+
+	.weatherDaysItem.active {
+		box-shadow: none;
+		pointer-events: none;
+		color: white;
+		box-shadow: none;
+		background: $darkBlue;
+	}
+}

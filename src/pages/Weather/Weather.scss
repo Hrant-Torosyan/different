@@ -1,0 +1,32 @@
+.weather {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	.weatherTtile {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 3rem;
+		> div {
+			margin: 0;
+		}
+	}
+	.weatherForm {
+		display: flex;
+		gap: 2rem;
+	}
+
+	.weatherContent {
+		padding: 5rem;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.weatherContentItem {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			height: 100%;
+		}
+	}
+}
