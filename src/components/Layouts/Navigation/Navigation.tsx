@@ -10,7 +10,7 @@ type NavButton = {
 const Navigation: React.FC = () => {
 	const btnArr = useMemo<NavButton[]>(() => {
 		const buttons: NavButton[] = [
-			{ title: "Welcome", href: "/welcome" },
+			{ title: "Welcome", href: "/" },
 			{ title: "Coffee", href: "/coffee" },
 			{ title: "Todo", href: "/todo" },
 			{ title: "Weather", href: "/weather" },
